@@ -7,20 +7,19 @@ function Login({ setIsLoggedIn }) {
     username: "",
     password: "",
   });
-
   function handleChange(e) {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   }
-
   function handleSubmit(e) {
     e.preventDefault();
 
     setIsLoggedIn(true);
 
     // after logging the user in, redirect to the home page!
+    // after logging the user in, redirect to the home  page  !
     history.push("/");
   }
 
